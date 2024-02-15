@@ -1,1 +1,65 @@
+1.write a Python programme to find out biggest value among 2 numbers
+# code
+a=int(input("Enter First number:"))
+b=int(input("Enter Second number:"))
+if a>b:
+    print(a,"is bigger number")
+else:
+    print(b,"is bigger number")
 
+#output
+Enter First number:4
+Enter Second number:9
+9 is bigger number
+
+
+2.Write aPython programme to find out the given number is eveyn or odd number
+#code
+a=int(input("Enter a number:"))
+if a%2==0:
+    print(a,"is an even number")
+else:
+    print(a,"is an odd number")
+
+#output
+ Enter a number:8
+ 8 is an even number
+
+
+3.Write a programme to accept student number,name and marks in 3 subjects.Calculate the average .Print the students result based on below conditions.
+if avg>=75 result is Distinction.
+if avg>=60 result is First Class.
+if avg>=50 result is Second Class.
+if avg>=35 result is Third Class.
+otherwise result is Fail.
+
+#code
+Studentnumber=int(input("Student Number:"))
+name=str(input("Name:"))
+m1=int(input("Marks in subject1:"))
+m2=int(input("Marks in subject2:"))
+m3=int(input("Marks in subject3:"))
+total=m1+m2+m3
+print("total:",total)
+avg=total/3
+print("avg:",avg)
+if avg>=75:
+     print("Distinction")
+elif avg>=60:
+      print("First Class")
+elif avg>=55:
+      print("Second Class")
+elif avg>=35:
+      print("Third Class")
+else:
+    print("Fail")
+
+#output
+Student Number:1
+Name:Kavya
+Marks in subject1:78
+Marks in subject2:80
+Marks in subject3:76
+total:234
+avg:78.0
+Distinction
